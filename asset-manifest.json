@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/[https://wardasanam.github.io/react-ai-chat-app](https://wardasanam.github.io/react-ai-chat-app)/static/css/main.91a1fe80.css",
-    "main.js": "/[https://wardasanam.github.io/react-ai-chat-app](https://wardasanam.github.io/react-ai-chat-app)/static/js/main.b5707bf5.js",
-    "static/js/453.fb40e2e2.chunk.js": "/[https://wardasanam.github.io/react-ai-chat-app](https://wardasanam.github.io/react-ai-chat-app)/static/js/453.fb40e2e2.chunk.js",
-    "index.html": "/[https://wardasanam.github.io/react-ai-chat-app](https://wardasanam.github.io/react-ai-chat-app)/index.html",
-    "main.91a1fe80.css.map": "/[https://wardasanam.github.io/react-ai-chat-app](https://wardasanam.github.io/react-ai-chat-app)/static/css/main.91a1fe80.css.map",
-    "main.b5707bf5.js.map": "/[https://wardasanam.github.io/react-ai-chat-app](https://wardasanam.github.io/react-ai-chat-app)/static/js/main.b5707bf5.js.map",
-    "453.fb40e2e2.chunk.js.map": "/[https://wardasanam.github.io/react-ai-chat-app](https://wardasanam.github.io/react-ai-chat-app)/static/js/453.fb40e2e2.chunk.js.map"
+    "main.css": "/react-ai-chat-app/static/css/main.91a1fe80.css",
+    "main.js": "/react-ai-chat-app/static/js/main.109c4165.js",
+    "static/js/453.fb40e2e2.chunk.js": "/react-ai-chat-app/static/js/453.fb40e2e2.chunk.js",
+    "index.html": "/react-ai-chat-app/index.html",
+    "main.91a1fe80.css.map": "/react-ai-chat-app/static/css/main.91a1fe80.css.map",
+    "main.109c4165.js.map": "/react-ai-chat-app/static/js/main.109c4165.js.map",
+    "453.fb40e2e2.chunk.js.map": "/react-ai-chat-app/static/js/453.fb40e2e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.91a1fe80.css",
-    "static/js/main.b5707bf5.js"
+    "static/js/main.109c4165.js"
   ]
 }
