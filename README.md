@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# **React AI Chat App**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a feature-rich, single-page chat application built with React that allows you to have conversations with Google's Gemini AI. The app runs entirely in your browser and saves all your chats to local storage.
 
-## Available Scripts
+A live version of this project is deployed on GitHub Pages.
 
-In the project directory, you can run:
+## **Features**
 
-### `npm start`
+* **Chat with AI:** Real-time, streaming-like conversation with the Gemini API.  
+* **Markdown & Code:** AI responses are rendered as Markdown, with support for lists, bolding, and formatted code blocks.  
+* **Multi-Chat Management:** A collapsible sidebar allows you to create, manage, and switch between multiple, separate conversations.  
+* **Chat Persistence:** All your chats and messages are saved to your browser's localStorage, so your conversations are saved, even if you refresh the page.  
+* **Full Chat Controls:**  
+  * **Auto-Naming:** Chats are automatically named based on your first message.  
+  * **Pin Chat:** Pin your most important conversations to the top of the list.  
+  * **Rename Chat:** Give your chats custom names.  
+  * **Delete Chat:** Remove old or unwanted conversations.  
+  * **Share Chat:** Copy a chat's entire history to your clipboard as JSON.  
+* **Message Editing:** You can edit your previous prompts, and the AI will regenerate its response based on your correction.  
+* **Regenerate Response:** If you don't like an answer, you can ask the AI to regenerate its last response.  
+* **Stop Generation:** If the AI is taking too long, you can stop its response mid-stream.  
+* **Search History:** A built-in search bar lets you filter your current chat's message history.  
+* **Custom Persona:** A settings modal for each chat lets you define a "System Prompt" to change the AI's persona (e.g., "You are a helpful assistant," "You are a pirate," etc.).  
+* **Light/Dark Mode:** A toggle to switch between light and dark themes, which is also saved locally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Getting Started**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run this project on your local machine, follow these steps.
 
-### `npm test`
+### **Prerequisites**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [Node.js](https://nodejs.org/) (v16 or later)  
+* npm (comes with Node.js)  
+* A Google AI Studio API Key for the Gemini API.
 
-### `npm run build`
+### **Installation**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**  
+   git clone \[https://github.com/wardasanam/react-ai-chat-app.git\](https://github.com/wardasanam/react-ai-chat-app.git)  
+   cd react-ai-chat-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**  
+   npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Add Your API Key:  
+   Open src/App.jsx and find the callGeminiAPI function. Paste your API key into the apiKey variable:  
+   // Inside src/App.jsx  
+   const callGeminiAPI \= async (chatHistory, systemPrompt, signal) \=\> {  
+      const apiKey \= 'YOUR\_API\_KEY\_HERE'; // \<--- PASTE YOUR KEY HERE  
+      // ...  
+   }
 
-### `npm run eject`
+4. Run the app:  
+   This will start the local development server.  
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) to see your app in the browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Deployment**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is already configured for easy deployment to GitHub Pages.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Commit and push** any changes you've made:  
+   git add .  
+   git commit \-m "My new updates"  
+   git push origin main
 
-## Learn More
+2. Run the deploy script:  
+   This will automatically build the project and push the build folder to the gh-pages branch on GitHub.  
+   npm run deploy
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After a few minutes, your site will be live at the URL specified in your package.json's homepage field:  
+https://www.google.com/search?q=https://wardasanam.github.io/react-ai-chat-app
